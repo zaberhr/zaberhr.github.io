@@ -1,0 +1,101 @@
+/* Base CSS*/
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+a:focus, input:focus, textarea;focus, button:focus {outline: 0 solid}
+a:hover{text-decoration: none}
+img{max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.section-padding{
+    padding: 80px 0;
+}
+
+
+.portfolio-bg-1 {background-image: url(../img/portfolio-bg-1.jpg);}
+.portfolio-bg-2 {background-image: url(../img/portfolio-bg-2.jpg);}
+.portfolio-bg-3 {background-image: url(../img/portfolio-bg-3.jpg);}
+.portfolio-bg-4 {background-image: url(../img/portfolio-bg-4.jpg);}
+.portfolio-bg-5 {background-image: url(../img/portfolio-bg-5.jpg);}
+.portfolio-bg-6 {background-image: url(../img/portfolio-bg-6.jpg);}
+
+
+.single-portfolio-item:after {background: #eaeaea;
+background: -moz-linear-gradient(top, #eaeaea 0%, #000000 100%);
+background: -webkit-linear-gradient(top, #eaeaea 0%,#000000 100%);
+background: linear-gradient(to bottom, #eaeaea 0%,#000000 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#000000',GradientType=0 );}
+
+
+
+
+
+.portfolio-list {
+    overflow: hidden;
+}
+
+.single-portfolio-item {
+    float: left;
+    width: 33.3333%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
+    position: relative;
+    z-index: 1;
+}
+
+.single-portfolio-item.large-bg {
+    height: 620px;
+}
+
+.portfolio-hover {
+    padding: 20px;
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.portfolio-hover h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.single-portfolio-item:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: .3s;}
+
+.single-portfolio-item:hover:after {
+    opacity: .7;
+}
+
+.single-portfolio-item:hover .portfolio-hover {
+    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+}

@@ -1,0 +1,170 @@
+/* Base CSS*/
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+a:focus, input:focus, textarea;focus, button:focus {outline: 0 solid}
+a:hover{text-decoration: none}
+img{max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.section-padding{
+    padding: 80px 0;
+}
+
+
+.welcome-area {
+    position: relative;
+    background: transparent;}
+
+.ytplayer-container{
+ position: absolute;
+ top: 0;
+ z-index: -1;
+}
+
+
+.header-area {
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.mainmenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+
+.mainmenu li {
+    display: inline-block;
+    position: relative;
+}
+
+.mainmenu li a {
+    display: block;
+    padding: 25px;
+}
+
+.header-area a {
+    color: #333;
+}
+
+.social-links {
+    border-left: 1px solid #ddd;
+    padding-left: 15px;
+}
+
+.social-links a {
+    padding: 25px 15px;
+    display: inline-block;
+    text-align: right;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    padding: 15px 0;
+}
+
+.logo span {
+    color: #01C0D9;
+}
+
+.welcome-area {height: 100%; position: relative; z-index: 2; overflow: hidden;}
+.welcome-area-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+html, body {
+    height: 100%;
+}
+
+.welcome-area-innner {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 20px;
+}
+
+.welcome-area-innner
+ h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.welcome-area-innner h1 {
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 50px;
+}
+
+.welcome-area-innner
+ p {
+    text-transform: uppercase;
+}
+
+.video-play-btn {
+    height: 60px;
+    width: 60px;
+    background: #fff;
+    color: #333;
+    display: inline-block;
+    line-height: 60px;
+    font-size: 20px;
+    padding-left: 5px;
+    border-radius: 50%;
+    margin-right: 13px;
+}
+
+.header-area.header-absulate-area {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    border: none;
+}
+
+.header-area.header-absulate-area:after, .social-links:before {position: absolute; height: 1px; width: 100%; 
+    content: ""; left: 0; bottom: 0; background: #fff; opacity: .2}
+
+  .header-area.header-absulate-area .social-links {position: relative; border: none;}
+
+  .header-area.header-absulate-area .social-links:before {height: 100%; width: 1px;}
+
+.header-area.header-absulate-area a {
+    color: #fff;
+}
+
+.welcome-area:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    content: "";
+    z-index: -1;
+    opacity: .2
+   
+}
+.welcome-area-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
